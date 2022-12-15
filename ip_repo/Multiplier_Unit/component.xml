@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>Multiplier_Unit</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>Clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>Clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET">RST</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>Multiplier_Unit</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>bcad4c40</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>VHDL</spirit:language>
+        <spirit:modelName>Multiplier_Unit</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>bcad4c40</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>f64a5dae</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_testbench</spirit:name>
+        <spirit:displayName>Test Bench</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation.testbench</spirit:envIdentifier>
+        <spirit:modelName>Multiplier_Unit_tb</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_testbench_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>4eebc460</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>A</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>B</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>RST</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>R</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">63</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>Done</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/AddSub_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/Controller_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/Counter_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/Register_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/Shift_Register_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fulladder.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>Multiplier_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_70cc5a88</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/AddSub_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/Controller_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/Counter_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/Register_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/Shift_Register_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fulladder.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>Multiplier_Unit.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/Multiplier_Unit_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_testbench_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/Multiplier_Unit_tb.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>Multiplier_Unit_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">Multiplier_Unit_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">qzynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">azynq</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>Multiplier_Unit_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2022-10-06T14:01:31Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69645a56_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@588fb152_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d6e83b_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5270e198_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1613bfb3_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45469fdd_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ff76f0_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7203abb4_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f3948b6_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64570d9_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60f9690_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31c6e8e7_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ae72ba5_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e7530e6_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4909a1ad_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c4bffca_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29021bfe_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4707008e_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1360bfc2_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54d3ca03_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6832a6aa_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5eb519b9_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@382b435d_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1febc78a_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1207aa77_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78ad7979_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77311b3e_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68ff04f5_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30d27d0c_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e20dcac_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@396eac5d_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42c2bdc8_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@294026b4_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42f1c3e3_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5025bdf2_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e8cbcd9_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a8b3cc1_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a2a1b3b_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79aba6e2_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70c27adc_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@363b4108_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53de7924_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e07ca9f_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f8bdfd2_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c59fa96_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@463a9d0b_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c98285c_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e031e26_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bb34ae9_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5963618d_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5dd3a972_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@364c60ac_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5519efcf_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d15c9ff_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29935054_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54317137_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2604dcb3_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9985f23_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d1640fa_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19a43b07_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d6d04ca_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d933827_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@157fc92f_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c2b646b_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20b180d1_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@218cfc48_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11fd0ba4_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4dea6db0_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27c57e1f_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36722845_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22f99ad1_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56c37a5_ARCHIVE_LOCATION">c:/Users/Morga/Documents/FPGA/Lab_3/Lab_3_repo/ip_repo/Multiplier_Unit</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="1566043a"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="e714b2ba"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="53d6dd7f"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="ed809e15"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
